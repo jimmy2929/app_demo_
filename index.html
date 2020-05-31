@@ -27,13 +27,14 @@
             </div>
         </div>
     </div>
-    <div id="card" onclick="touch_img()">
-        <a id="bot" href="#">
-            <img src="img/sign_in_title.png"></a>
-    </div>
+    <div id="title"></div>
     <div id="contain_carrefour">
-        <div id="title">
+        <div id="title_new">
             <img src="img/sign_title.png">
+        </div>
+        <div id="card" onclick="touch_img()">
+            <a id="bot" href="#">
+                <img src="img/sign_in_title.png"></a>
         </div>
         <div id="contain_img">
             <img src="img/main_down.jpg">
@@ -42,17 +43,19 @@
     <script>
         function touch_img() {
             var sign_box = document.getElementById('sign_box');
-            var card = document.getElementById('card');
+            var main = document.getElementById('contain_carrefour');
             sign_box.style.display = 'block';
-            card.style.webkitFilter = 'opacity(.5)';
+            main.style.webkitFilter = 'blur(3px)';
         }
 
         function close_img() {
             var sign_box = document.getElementById('sign_box');
             sign_box.style.display = 'none';
-            var card = document.getElementById('card');
-            card.style.zIndex = '';
-            card.style.webkitFilter = '';
+            var main = document.getElementById('contain_carrefour');
+            var bg = document.getElementById('title');
+            main.style.zIndex = '';
+            main.style.webkitFilter = '';
+            bg.style.webkitFilter = '';
         }
     </script>
 </body>
