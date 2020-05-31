@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>主頁</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div id="count">
+        <div id="count_box">
+            <a id="cross" href="#" onclick="close_shot()"><i class="far fa-times-circle"></i></a>
+            <div class="title_shot">至今減少塑膠量</div>
+            <div id="shot_img">
+                <img src="./img/shot_before.png">
+            </div>
+            <div id="test"><a href="#" onclick="change_box()">一個月後</a></div>
+        </div>
+    </div>
+    <div id="lock_box">
+        <div id="contain_lock">
+            <a id="cross" href="#" onclick="close_lock()"><i class="far fa-times-circle"></i></a>
+            <div id="name">
+                綠蠵龜
+            </div>
+            <div id="img1">
+                <img src="./img/cd_2.png">
+            </div>
+            <div id="power">
+                哈哈
+            </div>
+            <div id="cd">冷卻時間 : 3天
+            </div>
+            <!-- <div id="check">待兌換...<br><br><a href="#">點我兌換</a></div> -->
+            <div id="situation">
+                <div>未解鎖</div>
+            </div>
+        </div>
+    </div>
+    <div id="popupcontent">
+        <div id="social">
+            <a id="cross" href="#" onclick="close_rank()"><i class="far fa-times-circle"></i></a>
+            <div class="title">本月減塑排行榜最新動態</div>
+            <div class="contain">
+                <img src="img/MOM.png">
+                <div class="text">
+                    <div class="text_title">隔壁林媽媽</div>
+                    <div class="text_contain">成功解救台灣獼猴寶寶</div>
+                </div>
+            </div>
+            <div class="contain">
+                <img src="img/aunt.png">
+                <div class="text">
+                    <div class="text_title">對面蘇太太</div>
+                    <div class="text_contain">成功解救台灣梅花鹿</div>
+                </div>
+            </div>
+            <div class="contain">
+                <img src="img/uncle.png">
+                <div class="text">
+                    <div class="text_title">六叔公</div>
+                    <div class="text_contain">成功解救黑面琵鷺</div>
+                </div>
+            </div>
+            <div class="contain">
+                <img src="img/aunt2.png">
+                <div class="text">
+                    <div class="text_title">蕭阿姨</div>
+                    <div class="text_contain">成功解救櫻花鉤吻鮭</div>
+                </div>
+            </div>
+            <div id="me1" class="contain"></div>
+        </div>
+    </div>
+    <div id="popupcontent1">
+        <div id="social">
+            <a id="cross" href="#" onclick="close_task()"><i class="far fa-times-circle"></i></a>
+            <div class="title">本月減塑限時任務</div>
+            <div class="contain">
+                <img src="img/task1.png">
+                <div class="text">
+                    <div class="text_title">自備多個環保袋</div>
+                    <div class="text_contain">剩餘時間 01天15:05:32</div>
+                </div>
+            </div>
+            <div class="contain">
+                <img src="img/task2.png">
+                <div class="text">
+                    <div class="text_title">自備環保餐具</div>
+                    <div class="text_contain">剩餘時間 03天06:05:32</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contain">
+        <div id="title">
+            <div id="other">
+                <a id="a2" href="index.html">
+                    <img src="img/title_new.png">
+                </a>
+            </div>
+        </div>
+        <div id="sq">
+            <div id="one" class="box">
+                <a href="tiger.html">
+                    <div class="cont">
+                        <div class="name">鯨魚</div>
+                        <div class="img">
+                            <img id="one_img" src="./img/whale_smell.png">
+                        </div>
+                        <div class="process">進行中</div>
+                    </div>
+                </a>
+            </div>
+            <div id="two" class="box">
+                <a href="#" onclick="touch_lock(2)">
+                    <div class="cont">
+                        <div class="lock">
+                            <img id="three_img" src="./img/lock_img.png">
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div id="three" class="box">
+                <a href="#" onclick="touch_lock(3)">
+                    <div class="cont">
+                        <div class="lock">
+                            <img id="three_img" src="./img/lock_img.png">
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div id="three" class="box">
+                <a href="#" onclick="touch_lock(4)">
+                    <div class="cont">
+                        <div class="lock">
+                            <img id="three_img" src="./img/lock_img.png">
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div id="three" class="box">
+                <a href="#" onclick="touch_lock(5)">
+                    <div class="cont">
+                        <div class="lock">
+                            <img id="three_img" src="./img/lock_img.png">
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div id="fore">
+                <div class="cont">
+                    <a class="choose" href="#" onclick="open_rank()">
+                        <h4><i class="fas fa-trophy"></i> 排行榜</h4>
+                    </a>
+                    <a class="choose" href="#" onclick="open_task()">
+                        <h4><i class="fas fa-list-alt"></i> 當前任務</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        (function() {
+            if (url() != 3) {
+                var show_box = document.getElementById('count');
+                show_box.style.display = 'inline';
+                var contain = document.getElementById('contain');
+                contain.style.zIndex = '2';
+                contain.style.webkitFilter = 'opacity(.2)';
+            }
+
+
+        })();
+        (function() {
+            if (url() == 3) {
+                var change1 = document.getElementById('one');
+                var change2 = document.getElementById('two');
+                change1.innerHTML = '<a href="tiger.html?1"><div class="cont"><div class="name">鯨魚</div><div class="img"><img id="one_img" src="./img/whale_smell.png"></div><div class="process">已完成</div></div></a>'
+                change2.innerHTML = '<a href="fish.html"><div class="cont"><div class="name">綠蠵龜</div><div class="img"><img id="two_img" src="./img/turtle_smell.png"></div><div class="process">進行中</div></div></a>'
+
+            }
+        })();
+
+        function close_shot() {
+            var count_box = document.getElementById('count');
+            count_box.style.display = 'none';
+            var contain = document.getElementById('contain');
+            contain.style.zIndex = '';
+            contain.style.webkitFilter = '';
+        }
+
+        function change_box() {
+            var img = document.getElementById('shot_img');
+            var test = document.getElementById('test');
+            test.style.display = 'none';
+            img.innerHTML = '<img src="./img/shot_after.png">';
+        }
+
+        function url() {
+            var url = location.href;
+            var temp = url.split("?");
+            var vars = temp[1];
+            return vars;
+        }
+
+        function touch_lock(n) {
+            var lock_box = document.getElementById('lock_box');
+            var name = document.getElementById('name');
+            var img1 = document.getElementById('img1');
+            var power = document.getElementById('power');
+            var cd = document.getElementById('cd');
+            var me = document.getElementById('me');
+            switch (n) {
+                case 2:
+                    name.innerHTML = '綠蠵龜';
+                    img1.innerHTML = '<img src="./img/cold_2.png">';
+                    power.innerHTML = '買蔬菜打95折';
+                    cd.innerHTML = '3天';
+                    break;
+                case 3:
+                    name.innerHTML = '海牛';
+                    img1.innerHTML = '<img src="./img/cold_3.png">';
+                    power.innerHTML = '買水果打95折';
+                    cd.innerHTML = '3天';
+                    break;
+                case 4:
+                    name.innerHTML = '北極熊';
+                    img1.innerHTML = '<img src="./img/cold_4.png">';
+                    power.innerHTML = '免費兌換咖啡';
+                    cd.innerHTML = '5天';
+                    break;
+                case 5:
+                    name.innerHTML = '樹懶';
+                    img1.innerHTML = '<img src="./img/cold_5.png">';
+                    power.innerHTML = '餐廳折價優惠';
+                    cd.innerHTML = '7天';
+                    break;
+            }
+            lock_box.style.display = 'inline';
+            var contain = document.getElementById('contain');
+            contain.style.zIndex = '2';
+            contain.style.webkitFilter = 'opacity(.2)';
+        }
+
+        function close_lock() {
+            var lock_box = document.getElementById('lock_box');
+            lock_box.style.display = 'none';
+            var contain = document.getElementById('contain');
+            contain.style.zIndex = '';
+            contain.style.webkitFilter = '';
+        }
+
+        function open_rank() {
+            var rank_box = document.getElementById('popupcontent');
+            var me = document.getElementById('me1');
+            if (url() == 3) {
+                me.innerHTML = '<img src="img/me_img.png"><div class="text"><div class="text_title">我</div><div class="text_contain">成功解救石虎</div></div>';
+            }
+            rank_box.style.display = 'inline';
+            var contain = document.getElementById('contain');
+            contain.style.zIndex = '2';
+            contain.style.webkitFilter = 'opacity(.2)';
+        }
+
+        function close_rank() {
+            var rank_box = document.getElementById('popupcontent');
+            rank_box.style.display = 'none';
+            var contain = document.getElementById('contain');
+            contain.style.zIndex = '';
+            contain.style.webkitFilter = '';
+        }
+
+        function open_task() {
+            var task_box = document.getElementById('popupcontent1');
+            task_box.style.display = 'inline';
+            var contain = document.getElementById('contain');
+            contain.style.zIndex = '2';
+            contain.style.webkitFilter = 'opacity(.2)';
+        }
+
+        function close_task() {
+            var task_box = document.getElementById('popupcontent1');
+            var contain = document.getElementById('contain');
+            task_box.style.display = 'none';
+            contain.style.zIndex = '';
+            contain.style.webkitFilter = '';
+        }
+    </script>
+</body>
+
+</html>

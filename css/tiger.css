@@ -1,0 +1,295 @@
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+body {
+    margin: 0px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+#title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    margin-top: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#back a {
+    margin: 10px 30px;
+    font-size: 25px;
+    margin: 15px 100px;
+    text-decoration: none;
+    font-family: 'cwTeXYen', sans-serif;
+    font-weight: 600;
+    color: rgb(110, 108, 108);
+}
+
+#test a {
+    padding: 10px;
+    margin: 10px 30px;
+    font-size: 25px;
+    margin: 15px 200px;
+    text-decoration: none;
+    font-family: 'cwTeXYen', sans-serif;
+    font-weight: 600;
+    color: rgb(247, 151, 26);
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#test a:hover {
+    padding: 10px;
+    margin: 10px 30px;
+    font-size: 25px;
+    margin: 15px 200px;
+    text-decoration: none;
+    font-family: 'cwTeXYen', sans-serif;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    background-color: rgb(247, 151, 26);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#contain {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/* #contain {
+            background-color: rgba(196, 192, 192, 0.6);
+            height: 650px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        } */
+
+#img1 {
+    width: 500px;
+    height: 500px;
+    margin: 0px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 5px;
+    border: 2px solid rgb(70, 68, 68);
+}
+
+#img2 {
+    width: 100%;
+    z-index: 998;
+}
+
+#img3 {
+    position: absolute;
+    z-index: 1000;
+    display: none;
+}
+
+#power {
+    width: 500px;
+    margin: 0px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 5px;
+    border: 2px solid rgb(70, 68, 68);
+}
+
+#power img {
+    margin: 5px;
+    width: 95%;
+}
+
+#task1 {
+    width: 400px;
+    height: 100px;
+    margin: 10px 50px;
+    border-radius: 5px;
+    border: 2px solid rgb(70, 68, 68);
+    font-family: 'cwTeXYen', sans-serif;
+    font-weight: 600;
+    color: rgb(70, 68, 68);
+    font-size: 30px;
+    line-height: 100px;
+    text-align: center;
+}
+
+#story {
+    width: 500px;
+    height: 50px;
+    margin: 10px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 5px;
+    border: 2px solid rgb(70, 68, 68);
+}
+
+#story a {
+    font-size: 25px;
+    line-height: 40px;
+    text-decoration: none;
+    font-family: 'cwTeXYen', sans-serif;
+    font-weight: 600;
+    color: rgb(66, 66, 65);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#check {
+    font-family: 'cwTeXYen', sans-serif;
+    font-weight: 600;
+    color: rgb(247, 151, 26);
+    font-size: 100px;
+    text-align: center;
+}
+
+#check a {
+    font-family: 'cwTeXYen', sans-serif;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    background-color: rgb(247, 151, 26);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+#count {
+    z-index: 1200;
+    width: 300px;
+    height: 230px;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    display: none;
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    border: 1px solid #CCC;
+    background-color: #F9F9F9;
+    border: 1px solid #333;
+    padding: 5px;
+}
+
+#count_box {
+    width: 300px;
+    height: 480px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: none;
+}
+
+#cross {
+    width: 300px;
+    display: flex;
+    justify-content: flex-end;
+    color: rgb(63, 62, 62);
+    font-size: 25px;
+}
+
+.contain {
+    width: 280px;
+    height: 100px;
+    margin: 5px auto;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.text {
+    width: 280px;
+    display: flex;
+    margin: 10px 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text_title {
+    text-align: left;
+    font-family: 'cwTeXYen', sans-serif;
+    font-weight: 600;
+    margin: 2.5px 0px;
+    color: rgb(122, 120, 120);
+    border-bottom: 1.5px solid rgb(97, 97, 97);
+    font-size: 15.5px;
+}
+
+.text_contain {
+    font-size: 16px;
+    text-align: left;
+    letter-spacing: 1.5px;
+    font-family: 'cwTeXYen', sans-serif;
+    font-weight: 600;
+    margin: 6px 0px;
+    color: rgb(87, 85, 85);
+}
+
+@media screen and (max-width: 825px) {
+    #back a {
+        font-size: 20px;
+        margin: 15px 80px;
+    }
+    #test a {
+        font-size: 20px;
+        margin: 15px 80px;
+    }
+    #test a:hover {
+        font-size: 20px;
+        margin: 15px 80px;
+    }
+    #check {
+        font-weight: 600;
+        color: rgb(247, 151, 26);
+        font-size: 70px;
+        text-align: center;
+    }
+    #check a {
+        font-weight: 600;
+        color: rgb(255, 255, 255);
+        font-size: 35px;
+        background-color: rgb(247, 151, 26);
+        border-radius: 15px;
+        padding: 20px;
+    }
+    #img1 {
+        width: 400px;
+        height: 400px;
+        margin: 50px auto;
+    }
+}
+
+@media screen and (max-width:540px) {
+    #back a {
+        margin: 15px 20px;
+    }
+    #test a {
+        padding: 10px;
+        margin: 15px 20px;
+        color: rgb(247, 151, 26);
+        background-color: white;
+    }
+    #test a:hover {
+        padding: 10px;
+        margin: 15px 20px;
+        color: rgb(255, 255, 255);
+        background-color: rgb(247, 151, 26);
+    }
+    #img1 {
+        width: 300px;
+        height: 300px;
+        margin: 50px auto;
+    }
+}

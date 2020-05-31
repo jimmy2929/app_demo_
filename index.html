@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/carrefour.css">
+</head>
+
+<body>
+    <div id="sign_box">
+        <a id="cross" href="#" onclick="close_img()"><i class="far fa-times-circle"></i></a>
+        <div id="sign_cont">
+            <div id="contain_sign">
+                <div id="img_sign"></div>
+                <div id="number_sign">
+                    <div class="name_sign">請輸入ID</div>
+                    <input class="num_sign" type="text" placeholder="例:E113">
+                    <div class="name_sign">請輸入手機</div>
+                    <input class="num_sign" type="text" placeholder="例:0912345678">
+                </div>
+                <div id="accept_sign">
+                    <a href="app.html">登入</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="card" onclick="touch_img()">
+        <a id="bot" href="#">
+            <img src="img/sign_in_title.png"></a>
+    </div>
+    <div id="contain_carrefour">
+        <div id="title">
+            <img src="img/sign_title.png">
+        </div>
+        <div id="contain_img">
+            <img src="img/main_down.jpg">
+        </div>
+    </div>
+    <script>
+        function touch_img() {
+            var sign_box = document.getElementById('sign_box');
+            var card = document.getElementById('card');
+            sign_box.style.display = 'block';
+            card.style.webkitFilter = 'opacity(.5)';
+        }
+
+        function close_img() {
+            var sign_box = document.getElementById('sign_box');
+            sign_box.style.display = 'none';
+            var card = document.getElementById('card');
+            card.style.zIndex = '';
+            card.style.webkitFilter = '';
+        }
+    </script>
+</body>
+
+</html>

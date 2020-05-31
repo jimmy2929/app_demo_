@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>石虎</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/tiger.css">
+
+</head>
+
+<body>
+    <div id="count">
+        <div id="count_box">
+            <a id="cross" href="#" onclick="close_story()"><i class="far fa-times-circle"></i></a>
+            <div class="text_title">
+                擱淺鯨魚胃塞40公斤塑膠，您相信嗎？
+            </div>
+            <div class="contain">
+                <div class="text">
+                    <div class="text_contain">保護海洋與鯨魚，有助於減緩氣候變遷鯨魚儲存二氧化碳量驚人，因為鯨魚會儲存大量的二氧化碳在體內，加上有鯨魚的地方就會有浮游生物，提供大量的氧氣，一隻鯨魚的減碳效果可以等同於一千棵樹！</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="title">
+        <div id="back"><a href="app.html"><i class="fas fa-angle-double-left"></i> 上一頁</a></div>
+        <div id="test"><a href="#" onclick="touch_test()">掃碼測試</a></div>
+    </div>
+    <div id="contain">
+        <div id="img1">
+            <img id="img2" src="img/whale_big.png">
+            <img id="img3" src="img/save.png">
+        </div>
+        <div id="power">
+            <img src="./img/cd_1.png">
+        </div>
+        <div id="task1">節省塑膠袋量 <span id="change1" style="color: crimson;"> 0</span> / 3</div>
+        <!-- <div id="check">待兌換...<br><br><a href="#">點我兌換</a></div> -->
+        <div id="story">
+            <a href="#" onclick="open_story()">故事簡介</a>
+        </div>
+    </div>
+    <script>
+        (function() {
+            if (url() == 1) {
+                var change = document.getElementById('change1');
+                var vanish = document.getElementById('test');
+                var show = document.getElementById('img3');
+                var back = document.getElementById('back');
+                change.style.color = 'green';
+                vanish.style.display = 'none';
+                show.style.display = 'block';
+                change.innerHTML = 3;
+                back.innerHTML = '<a href="app.html?3"><i class="fas fa-angle-double-left"></i> 上一頁</a>'
+            }
+        })();
+        var count = 0;
+
+        function url() {
+            var url = location.href;
+            var temp = url.split("?");
+            var vars = temp[1];
+            return vars;
+        }
+
+        function touch_test() {
+            var change = document.getElementById('change1');
+            var vanish = document.getElementById('test');
+            var show = document.getElementById('img3');
+            count = count + 1;
+            if (count == 3) {
+                location.href = 'app.html?3';
+                change.style.color = 'green';
+                vanish.style.display = 'none';
+                show.style.display = 'block';
+
+            }
+            change.innerHTML = count;
+
+        }
+
+        function open_story() {
+            var story_box = document.getElementById('count');
+            story_box.style.display = 'inline';
+            var contain = document.getElementById('contain');
+            contain.style.zIndex = '2';
+            contain.style.webkitFilter = 'opacity(.2)';
+        }
+
+        function close_story() {
+            var story_box = document.getElementById('count');
+            story_box.style.display = 'none';
+            var contain = document.getElementById('contain');
+            contain.style.zIndex = '';
+            contain.style.webkitFilter = '';
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>櫻花鉤吻鮭</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/fish.css">
+</head>
+
+<body>
+    <div id="count">
+        <div id="count_box">
+            <a id="cross" href="#" onclick="close_story()"><i class="far fa-times-circle"></i></a>
+            <div class="text_title">
+                人類垃圾，是現今海洋生物生存最大的敵人。
+            </div>
+            <div class="contain">
+                <div class="text">
+                    <div class="text_contain">數不清因誤食、纏繞而死的生命，正在海底看不見的幽暗角落上演。海龜是好奇寶寶，對任何水中漂流的東西都很好奇。因為牠們沒有牙齒和舌頭，加上視力不是很好，所以沒辦法判斷漂流物是否可吃。對海龜來說，任何東西就是吞到肚子讓胃去解決。一旦垃圾排不出去就會塞在胃裡累積，導致海龜飢餓衰弱死亡。</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="title">
+        <div id="back"><a href="app.html?3"><i class="fas fa-angle-double-left"></i> 上一頁</a></div>
+    </div>
+    <div id="contain_flower">
+        <div id="img1">
+            <img id="img2" src="img/turtle_big.png">
+        </div>
+        <div id="power">
+            <img src="./img/cd_2.png">
+        </div>
+        <div id="task1">節省塑膠袋量 <span id="change1" style="color: crimson;"> 0</span> / 5</div>
+        <!-- <div id="check">待兌換...<br><br><a href="#">點我兌換</a></div> -->
+        <div id="story">
+            <a href="#" onclick="open_story()">故事簡介</a>
+        </div>
+    </div>
+    <script>
+        function exchange() {
+            var box = document.getElementById('contain_flower')
+            box.style.display = 'flex';
+            box.style.flexWrap = 'wrap';
+            box.style.justifyContent = 'space-around';
+            box.style.alignItems = 'center';
+            box.style.height = '0px';
+            box.style.backgroundColor = 'white';
+            box.innerHTML = '<div id="img1"><img id="img2" src="img/fish_big.PNG"></div><div id="task1">節省塑膠袋量 <span id="change" style="color: crimson;"> 0</span> / 5</div>'
+        }
+
+        function open_story() {
+            var story_box = document.getElementById('count');
+            story_box.style.display = 'inline';
+            var contain = document.getElementById('contain');
+            contain.style.zIndex = '2';
+            contain.style.webkitFilter = 'opacity(.2)';
+        }
+
+        function close_story() {
+            var story_box = document.getElementById('count');
+            story_box.style.display = 'none';
+            var contain = document.getElementById('contain');
+            contain.style.zIndex = '';
+            contain.style.webkitFilter = '';
+        }
+    </script>
+</body>
+
+</html>
