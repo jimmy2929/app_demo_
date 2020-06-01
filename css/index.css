@@ -319,7 +319,7 @@ a {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     #a2 img {
         margin: 5px;
         width: 200px;
